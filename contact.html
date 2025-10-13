@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  
   <meta charset="UTF-8">
   <title>Thoughts in Clouds</title>
   <meta name="description" content="Personal Blog">
@@ -11,56 +9,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
+  <!-- Sticky Header -->
+  <header id="site-header">
+    <div class="navbar">
+      <div class="brand">
+        <div class="brand__title">Thoughts in Clouds</div>
+        <div class="brand__tagline">One thought at a time.</div>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-<!-- Title -->
-<h1>Thoughts in Clouds</h1>
+  <main class="wrapper layout two-col">
+    <section class="content">
+      <article class="post">
+        <h2>Contact Me</h2>
+        <p class="text-muted">Want to get in touch? Contact me here!</p>
 
-<!-- Subtitle -->
-<p>This is where I share what's been on my mind, one thought at a time.</p>
+        <!-- Multi-column Flexbox form -->
+        <form name="contact" method="POST" action="/contact/success" data-netlify="true" class="form-grid" aria-label="Contact form">
+          <div class="form-field">
+            <label for="c-name">Name</label>
+            <input id="c-name" type="text" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="c-email">Email Address</label>
+            <input id="c-email" type="email" name="mail" required>
+          </div>
+          <div class="form-field">
+            <label for="c-reason">Reason for contact</label>
+            <select id="c-reason" name="contact">
+              <option value="contractor">Hi, looking for a contractor.</option>
+              <option value="interview">Hi, interested in an interview.</option>
+            </select>
+          </div>
+          <div class="form-field" style="display:none">
+            <!-- Honeypot field for spam prevention -->
+            <label for="website">Website</label>
+            <input id="website" type="text" name="website">
+          </div>
+          <div class="form-field" style="flex-basis: 100%">
+            <label for="c-more">Additional Information</label>
+            <textarea id="c-more" name="more-info" rows="4"></textarea>
+          </div>
+          <div class="form-actions">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </article>
+    </section>
 
-<!-- Navigation Bar -->
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Me</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-
-<br>
-
-<!-- Title -->
-<h2>Contact Me</h2>
-
-<!-- Contact Form --->
-<form name="contact" method="POST" action="/contact/success" data-netlify="true">
-  <div class="container">
-    <p>Want to get in touch? Contact me here!</p>
-  </div>
-
-  <div class="container">
-    <label>Name:</label> <input type="text" name="name" required> <br>
-    <label>Email Address:</label> <input type="text" name="mail" required> <br>
-
-    <label for="contact">Reason for contact:</label>
-
-    <select name="contact" id="contact">
-      <option value="contractor">Hi, looking for a contractor.</option>
-      <option value="interview">Hi, interested in an interview.</option>
-    </select>
-    <br>
-    <label>Additional Information:</label> <input type="text" name="more info"> <br>
-    
-  </div>
-
-<br>
-
-  <div class="container">
-    <input type="submit" value="Submit">
-  </div>
-</form>
-
-
-
+    <aside class="sidebar">
+      <div class="panel">
+        <h3 class="m-0">Other Ways</h3>
+        <p class="text-muted">Prefer email? You can also reach me through my About page.</p>
+        <p class="mb-0"><a href="about.html">About Me →</a></p>
+      </div>
+    </aside>
+  </main>
 </body>
 </html>
