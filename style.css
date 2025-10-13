@@ -24,7 +24,7 @@ header {
 
 header h1 {
   font-size: 2em;
-  text-align: center;
+  
 }
 
 /* === Navigation === */
@@ -112,6 +112,7 @@ footer {
 
   header h1 {
     font-size: 1.4em;
+    text-align: center;
   }
 
   button {
