@@ -8,13 +8,13 @@
 }
 
 :root {
-  --bg: #f7f7fb;
-  --panel: #ffffff;
-  --text: #222;
-  --muted: #666;
-  --brand: #5a67d8;
-  --brand-2: #7f9cf5;
-  --border: #e6e6ef;
+  --bg: #E0E1E9;      /* main background */
+  --panel: #E7CEE3;   /* panels, cards, post boxes */
+  --text: #222;       /* body text */
+  --muted: #555;      /* subtle gray text */
+  --brand: #FFB8D1;   /* main accent color (buttons, links) */
+  --brand-2: #E4B4C2; /* hover accent */
+  --border: #DDFDFE;  /* soft border lines */
   --radius: 14px;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -33,7 +33,7 @@ body {
   margin: 0;
   font-family: var(--font-sans);
   color: var(--text);
-  background: linear-gradient(180deg, var(--bg) 0%, #eef1ff 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, #DDFDFE 100%);
   line-height: 1.6;
 }
 
@@ -258,7 +258,7 @@ input[type="submit"] {
   border-radius: 12px;
   padding: 0.7rem 1rem;
   background: linear-gradient(180deg, var(--brand), var(--brand-2));
-  color: #fff;
+  color: #222;
   font-weight: 600;
   cursor: pointer;
   box-shadow: var(--shadow);
