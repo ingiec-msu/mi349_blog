@@ -10,7 +10,7 @@
   --panel: #E7CEE3;   /* panels, cards, post boxes */
   --text: #222;       /* body text */
   --muted: #555;      /* subtle gray text */
-  --brand: #E4B4C2;   /* main accent color (buttons, links) */
+  --brand:#df89a2;   /* main accent color (buttons, links) */
   --brand-2: #E4B4C2; /* hover accent */
   --border: #DDFDFE;  /* soft border lines */
   --radius: 14px;
