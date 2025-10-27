@@ -182,9 +182,7 @@ textarea {
   height: auto;
   border-radius: 2px;
   display: block;
-  img {
-  border: 5px solid #FFFFFF; /* 5px width, solid style, black color */
-  }
+  border: 5px solid #FFFFFF;
 }
 
 /* Figure with floated image + caption */
@@ -301,10 +299,6 @@ input[type="submit"]:hover {
     float: none;
     width: 100%;
     margin: 0 0 var(--space-2) 0;
-  }
-
-  img {
-  width: 100%;
   }
 
  
