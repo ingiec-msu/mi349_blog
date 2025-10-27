@@ -6,13 +6,13 @@
 }
 
 :root {
-  --bg: #FFFFFF;      /* main background */
-  --panel: #FFCAD4;   /* panels, cards, post boxes */
-  --text: #222;       /* body text */
-  --muted: #555;      /* subtle gray text */
-  --brand:#df89a2;   /* main accent color (buttons, links) */
-  --brand-2: #E4B4C2; /* hover accent */
-  --border: #DDFDFE;  /* soft border lines */
+  --bg: #ede7e7;     
+  --panel: #FFCAD4;   
+  --text: #222;       
+  --muted: #555;      
+  --brand:#df89a2;   
+  --brand-2: #E4B4C2; 
+  --border: #DDFDFE;  
   --radius: 14px;
   --space-1: 0.5rem;
   --space-2: 1rem;
@@ -72,7 +72,7 @@ textarea {
   width: 100%;
   padding: 0.7rem 0.9rem;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 2px; /* Changed */
   background: #fff;
   font: inherit;
 }
@@ -90,7 +90,7 @@ textarea {
   top: 0;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background: rgba(255,255,255,0.75);
+  background: #f5ccda;
   border-bottom: 1px solid var(--border);
 }
 
