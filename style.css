@@ -7,13 +7,13 @@
 
 :root {
   --bg: #f9f9f9;     
-  --panel: #FFCAD4;   
+  --panel: #f1d4de;   
   --text: #222;       
   --muted: #555;      
   --brand:#df89a2;   
   --brand-2: #E4B4C2; 
   --border: #DDFDFE;  
-  --radius: 14px;
+  --radius: 2px;
   --space-1: 0.5rem;
   --space-2: 1rem;
   --space-3: 1.5rem;
