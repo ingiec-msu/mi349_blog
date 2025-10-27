@@ -132,7 +132,7 @@ textarea {
   display: inline-block;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 800;
 }
 .nav a:hover {
   background: var(--brand-2);
